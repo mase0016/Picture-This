@@ -15,6 +15,31 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
+
+      <picture>
+      <!-- Square images for viewports 960px and larger -->
+      <source 
+        media="(min-width: 960px)"
+        srcset="
+          images/square-480.jpg 480w,
+          images/square-960.jpg 960w,
+          images/square-1440.jpg 1440w,
+          images/square-1960.jpg 1920w
+        "
+        sizes="50vw">
+      
+      <!-- Landscape images for viewports smaller than 960px -->
+      <source 
+        srcset="
+          images/landscape-320.jpg 320w,
+          images/landscape-640.jpg 640w,
+          images/landscape-960.jpg 960w,
+          images/landscape-1440.jpg 1440w,
+          images/landscape-1920.jpg 1920w
+        "
+        sizes="100vw">
+      
+      <!-- Fallback image -->
     <img src="images/museum.jpg" alt="placeholder">
 
   </header>
